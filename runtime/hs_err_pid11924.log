@@ -1,0 +1,222 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffa885704b3, pid=11924, tid=11932
+#
+# JRE version:  (11.0.11+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.11+9, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x1d04b3]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -javaagent:LaunchServer.jar LaunchServer.jar
+
+Host: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz, 8 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.928)
+Time: Wed Apr 28 12:30:59 2021 Центральная Азия (зима) elapsed time: 0.189146 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001d8d9998800):  JavaThread "Unknown thread" [_thread_in_vm, id=11932, stack(0x0000001d18900000,0x0000001d18a00000)]
+
+Stack: [0x0000001d18900000,0x0000001d18a00000],  sp=0x0000001d189fee80,  free space=1019k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1d04b3]
+V  [jvm.dll+0x1ce583]
+V  [jvm.dll+0x3525cb]
+V  [jvm.dll+0x73e660]
+V  [jvm.dll+0x3b9ddf]
+V  [jvm.dll+0x3bc2e1]
+C  [jli.dll+0x520b]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17034]
+C  [ntdll.dll+0x52651]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x0000000000000000
+
+
+Registers:
+RAX=0x000009ac69d2c533, RBX=0x0000000000000000, RCX=0x0000000000000000, RDX=0x0000000000000000
+RSP=0x0000001d189fee80, RBP=0x0000000000000000, RSI=0x000001d8d9998800, RDI=0x0000000000000000
+R8 =0x0000000000000000, R9 =0x0000000000000000, R10=0x0000000000000000, R11=0x0000001d189fec30
+R12=0x0000000000000000, R13=0x00007ffa88943030, R14=0x000001d8d7f72058, R15=0x0000001d189ffbc8
+RIP=0x00007ffa885704b3, EFLAGS=0x0000000000010256
+
+Top of Stack: (sp=0x0000001d189fee80)
+0x0000001d189fee80:   000001d8d7f77b60 00007ffa88662298
+0x0000001d189fee90:   0000001d189ffbc8 0000000000000400
+0x0000001d189feea0:   0000000000000000 000001d8d9998800
+0x0000001d189feeb0:   0000ab1a0b838f81 00007ffa88943030
+0x0000001d189feec0:   0000001d189fefa0 0000001d189ffbc8
+0x0000001d189feed0:   000001d8d7f72058 00007ffa88943030
+0x0000001d189feee0:   0000000000000000 00007ffa85a60000
+0x0000001d189feef0:   00007ffa88c07c78 0000000000000000
+0x0000001d189fef00:   00007ffa8856e42a 00007ffadcb953dc
+0x0000001d189fef10:   0000001d189fefa0 0000000000000001
+0x0000001d189fef20:   000009ac69d2c533 000001d8d7f72058
+0x0000001d189fef30:   00007ffa00000000 00007ffa88943030
+0x0000001d189fef40:   000001d8d9998800 0000001d189ff060
+0x0000001d189fef50:   0000000000000000 00007ffa8856e583
+0x0000001d189fef60:   00007ffa85a20000 00007ffa85a6cfc0
+0x0000001d189fef70:   0000001d189ff060 000001d8d9998800 
+
+Instructions: (pc=0x00007ffa885704b3)
+0x00007ffa885703b3:   f0 ff 15 e6 24 5e 00 48 8b cb 41 b1 01 48 2b 8c
+0x00007ffa885703c3:   24 90 00 00 00 45 33 c0 33 d2 c6 04 31 00 48 8b
+0x00007ffa885703d3:   ce e8 a7 0b 00 00 42 80 3c 33 3b 4a 8d 3c 33 75
+0x00007ffa885703e3:   1c 0f 1f 40 00 0f 1f 84 00 00 00 00 00 48 ff c3
+0x00007ffa885703f3:   ff c5 42 80 3c 33 3b 4a 8d 3c 33 74 f0 49 83 3c
+0x00007ffa88570403:   24 00 74 18 48 8b 94 24 98 00 00 00 49 8b cf e8
+0x00007ffa88570413:   19 ec ee ff 49 8b cc e8 81 eb ee ff 48 8b 44 24
+0x00007ffa88570423:   20 48 8d 4c 24 30 49 89 47 18 48 8b 44 24 28 49
+0x00007ffa88570433:   89 47 20 4d 89 67 10 e8 51 28 0f 00 44 8b ed 48
+0x00007ffa88570443:   89 9c 24 90 00 00 00 48 3b 5c 24 38 0f 8c cd fe
+0x00007ffa88570453:   ff ff 4c 8b 7c 24 40 4c 8b 64 24 48 48 8b 7c 24
+0x00007ffa88570463:   50 48 8b 74 24 58 48 8b 9c 24 80 00 00 00 48 83
+0x00007ffa88570473:   c4 60 41 5e 41 5d 5d c3 cc cc cc cc cc 40 53 55
+0x00007ffa88570483:   56 41 55 48 81 ec b8 00 00 00 48 8b 05 e4 27 87
+0x00007ffa88570493:   00 48 33 c4 48 89 84 24 a0 00 00 00 48 8b e9 48
+0x00007ffa885704a3:   c7 c3 ff ff ff ff 0f 1f 80 00 00 00 00 48 ff c3
+0x00007ffa885704b3:   80 3c 0b 00 75 f7 33 f6 c6 44 24 30 01 40 38 35
+0x00007ffa885704c3:   c9 50 8a 00 74 17 40 38 35 64 b7 89 00 75 0e 33
+0x00007ffa885704d3:   d2 48 8d 0d c5 75 69 00 e8 60 ca 19 00 45 33 ed
+0x00007ffa885704e3:   85 db 0f 8e 11 02 00 00 48 89 bc 24 e8 00 00 00
+0x00007ffa885704f3:   48 8b fd 4c 89 a4 24 f0 00 00 00 48 63 c3 33 db
+0x00007ffa88570503:   4c 89 b4 24 f8 00 00 00 4c 89 bc 24 b0 00 00 00
+0x00007ffa88570513:   48 89 44 24 68 48 89 74 24 40 0f 1f 00 0f b6 07
+0x00007ffa88570523:   84 c0 74 12 3c 3b 74 0e 0f b6 44 2b 01 48 ff c3
+0x00007ffa88570533:   ff c6 84 c0 75 ee 48 8d 54 24 38 48 c7 44 24 38
+0x00007ffa88570543:   00 00 00 00 48 8d 4c 24 60 e8 bf 26 0f 00 48 8b
+0x00007ffa88570553:   44 24 38 33 d2 4c 8b b0 78 02 00 00 49 8b 46 18
+0x00007ffa88570563:   4d 8b 66 10 48 89 44 24 50 49 8b 46 20 48 89 44
+0x00007ffa88570573:   24 58 49 8b 46 28 48 89 44 24 48 8b c6 41 2b c5
+0x00007ffa88570583:   48 63 f8 48 8d 4f 01 e8 b1 4b 48 00 49 63 d5 4c
+0x00007ffa88570593:   8b c7 48 03 d5 48 8b c8 4c 8b f8 ff 15 fc 22 5e
+0x00007ffa885705a3:   00 48 8b cb 48 2b 4c 24 40 80 7c 24 30 00 42 c6 
+
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001d8d7f71ef0, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000001d8d9998800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=11932, stack(0x0000001d18900000,0x0000001d18a00000)]
+
+Threads with active compile tasks:
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+
+[error occurred during error reporting (printing compressed oops mode), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffa88afc347]
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.179 Loaded shared library C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff727460000 - 0x00007ff72746d000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\java.exe
+0x00007ffadf270000 - 0x00007ffadf465000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffadecd0000 - 0x00007ffaded8d000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffadcb90000 - 0x00007ffadce58000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffadd0c0000 - 0x00007ffadd1c0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffa89170000 - 0x00007ffa89187000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\jli.dll
+0x00007ffade1d0000 - 0x00007ffade370000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffadcae0000 - 0x00007ffadcb02000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffadef70000 - 0x00007ffadef9a000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffadd1c0000 - 0x00007ffadd2cb000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffadce60000 - 0x00007ffadcefd000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffa89140000 - 0x00007ffa89156000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\VCRUNTIME140.dll
+0x00007ffab7eb0000 - 0x00007ffab814a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.844_none_ca00b6081b84eb1d\COMCTL32.dll
+0x00007ffadf050000 - 0x00007ffadf0ee000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffadd3b0000 - 0x00007ffadd3e0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffa88f00000 - 0x00007ffa88fa6000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\msvcp140.dll
+0x00007ffa883a0000 - 0x00007ffa88eeb000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\server\jvm.dll
+0x00007ffadefa0000 - 0x00007ffadf04c000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffadd5c0000 - 0x00007ffadd65b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffadf0f0000 - 0x00007ffadf21b000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffadd3a0000 - 0x00007ffadd3a8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffab0810000 - 0x00007ffab0819000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffadeb80000 - 0x00007ffadebeb000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffaba8d0000 - 0x00007ffaba8f7000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffad0ab0000 - 0x00007ffad0aba000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffadb2d0000 - 0x00007ffadb2e2000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffa85a90000 - 0x00007ffa85aa0000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\verify.dll
+0x00007ffadaf90000 - 0x00007ffadb174000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffabe900000 - 0x00007ffabe92c000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffadc9b0000 - 0x00007ffadca30000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffa85a60000 - 0x00007ffa85a88000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\java.dll
+0x00007ffa85a50000 - 0x00007ffa85a5a000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\jimage.dll
+0x00007ffa85a40000 - 0x00007ffa85a4e000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\instrument.dll
+0x00007ffa85a20000 - 0x00007ffa85a37000 	C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.844_none_ca00b6081b84eb1d;C:\Users\Алтынай\Desktop\GravitLauncher\jdk11\bin\server
+
+VM Arguments:
+jvm_args: -javaagent:LaunchServer.jar 
+java_command: LaunchServer.jar
+java_class_path (initial): LaunchServer.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 265718336                                 {product} {ergonomic}
+   size_t MaxHeapSize                              = 4251493376                                {product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Алтынай\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\Алтынай\AppData\Local\Programs\Python\Python38\;C:\Users\Алтынай\AppData\Local\Microsoft\WindowsApps;C:\Users\Алтынай\AppData\Local\Programs\Microsoft VS Code\bin;D:\PyCharm Community Edition 2020.2.2\bin;;C:\Users\Алтынай\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.1\bin;;
+USERNAME=Алтынай
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.928)
+OS uptime: 0 days 0:00 hours
+
+CPU:total 8 (initial active 8) 
+
+Memory: 4k page, system-wide physical 16218M (12457M free)
+TotalPageFile size 18650M (AvailPageFile size 14195M)
+current process WorkingSet (physical memory assigned to process): 8M, peak: 8M
+current process commit charge ("private bytes"): 3M, peak: 3M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.11+9) for windows-amd64 JRE (11.0.11+9), built on Apr 20 2021 21:22:09 by "" with MS VC++ 15.9 (VS2017)
+
+END.

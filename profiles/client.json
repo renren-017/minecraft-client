@@ -1,0 +1,178 @@
+{
+  "update": [
+    "servers.dat"
+  ],
+  "updateExclusions": [
+	"mcef-1.12.2-1.11.jar",
+	"mcef-1.12.2-1.11-coremod.jar",
+	"webdisplays-1.12.2-1.1.jar"
+  ],
+  "updateShared": [],
+  "updateVerify": [
+    "libraries",
+    "natives",
+    "mods",
+    "minecraft.jar",
+    "forge.jar",
+    "liteloader.jar"
+  ],
+  "updateOptional": [
+    {
+      "actions": [ 
+        { 
+          "files": {
+            "mods/1.12.2/OpenComputers-MC1.12.2-1.7.5.192.jar": ""
+           },
+          "type": "file"
+        }
+      ],
+        "info": "OpenComputers is a mod that adds computers and robots into the game, which can be programmed in Lua 5.3",
+        "visible": true,
+        "permissions": 0,
+	"mark": true,
+        "name": "OpenComputers"
+    },
+	{
+      "actions": [ 
+        { 
+          "files": {
+            "mods/1.12.2/webdisplays-1.12.2-1.1.jar": ""
+           },
+          "type": "file"
+        }
+      ],
+        "info": "WebDisplays",
+        "visible": true,
+        "permissions": 0,
+	"mark": true,
+        "name": "WebDisplays",
+	"dependenciesFile": [{"name":"mcef"}],
+	"subTreeLevel": 2
+    },
+    {
+      "actions": [ 
+        { 
+          "files": {
+            "mods/1.12.2/Voice+Chat+Reloaded-1.2.0.jar": ""
+           },
+          "type": "file"
+        }
+      ],
+        "info": "Gliby's Voice Chat adds the ability to talk to your friends through Minecraft, simply hold the correct button on your input device and speak away",
+        "visible": true,
+        "permissions": 0,
+	"mark": true,
+        "name": "VoiceChat"
+    },
+    {
+      "actions": [ 
+        { 
+          "files": {
+            "mods/1.12.2/mcef-1.12.2-1.11.jar": ""
+           },
+          "type": "file"
+        }
+      ],
+        "info": "mcef",
+        "visible": true,
+        "permissions": 0,
+	"mark": true,
+        "name": "mcef"
+    },
+	{
+      "actions": [ 
+        { 
+          "files": {
+            "mods/1.12.2/mcef-1.12.2-1.11-coremod.jar": ""
+           },
+          "type": "file"
+        }
+      ],
+        "info": "mcef",
+        "visible": true,
+        "permissions": 0,
+	"mark": true,
+        "name": "mcef-coremod"
+    },
+    {
+      "actions": [
+        {
+          "args": [
+            "--add-modules",
+            "jdk.unsupported"
+          ],
+          "type": "jvmArgs"
+        }
+      ],
+      "triggers": [{"type": "JAVA_VERSION", "compareMode": 1, "need": true, "value": 8}], 
+      "info": "Аргументы Java9+",
+      "visible": false,
+      "permissions": 0,
+      "name": "Java9Args"
+    },
+    {
+      "actions": [
+        {
+          "files": {
+            "mods/1.12.2/OptiFine_1.12.2_HD_U_D3.jar": "Optifine"
+          },
+          "type": "file"
+        }
+      ],
+        "info": "Улучшение производительности",
+        "permissions": 0,
+        "visible": true,
+        "name": "OptiFine HD"
+    }
+  ],
+  "jvmArgs": [
+    "-Dfml.ignorePatchDiscrepancies\u003dtrue",
+    "-Dfml.ignoreInvalidMinecraftCertificates\u003dtrue",
+    "-XX:+UseConcMarkSweepGC",
+    "-XX:+CMSIncrementalMode",
+    "-XX:-UseAdaptiveSizePolicy",
+    "-Xmn128M",
+    "-XX:+DisableAttachMechanism"
+  ],
+  "classPath": [
+    "forge.jar",
+    "liteloader.jar",
+    "minecraft.jar",
+    "libraries"
+  ],
+  "altClassPath": [],
+  "clientArgs": [
+    "--tweakClass",
+    "com.mumfrey.liteloader.launch.LiteLoaderTweaker",
+    "--tweakClass",
+    "net.minecraftforge.fml.common.launcher.FMLTweaker"
+  ],
+  "securityManagerConfig": "CLIENT",
+  "classLoaderConfig": "LAUNCHER",
+  "signedClientConfig": "NONE",
+  "version": "1.12.2",
+  "assetIndex": "1.12.2",
+  "dir": "client",
+  "assetDir": "asset1.12",
+  "recommendJavaVersion": 8,
+  "minJavaVersion": 8,
+  "maxJavaVersion": 17,
+  "warnMissJavaVersion": true,
+  "sortIndex": 0,
+  "uuid": "a2ce0911-942b-46de-82e4-63da5009d415",
+  "title": "client",
+  "info": "Информация о сервере",
+  "serverPort": 0,
+  "updateFastCheck": true,
+  "mainClass": "net.minecraft.launchwrapper.Launch",
+  "compatClasses": [],
+  "properties": {},
+  "servers": [
+    {
+      "name": "client",
+      "serverAddress": "alim.alatoo.edu.kg",
+      "serverPort": 25565,
+      "isDefault": true
+    }
+  ]
+}
