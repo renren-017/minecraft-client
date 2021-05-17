@@ -71,7 +71,7 @@
 
 #clientLaunch {
     -fx-background-radius: 0;
-    -fx-background-color: #7C4DFF;
+    -fx-background-color: #d50618;
     -fx-background-size: cover;
     -fx-text-fill: #fff;
     -fx-background-insets: 0;
@@ -79,7 +79,7 @@
 
 #clientSettings {
     -fx-background-radius: 0;
-    -fx-background-color: #7C4DFF;
+    -fx-background-color: #d50618;
     -fx-background-size: cover;
     -fx-font-size: 13pt;
     -fx-background-insets: 0;
@@ -89,7 +89,7 @@
 #clientLaunch:hover,
 #clientSettings:hover,
 #clientSettings:pressed {
-    -fx-background-color: #6B36FF;
+    -fx-background-color: #d50618;
 }
 
 /*-- DrLeonardo Design for GravitLauncher --*/

@@ -122,7 +122,7 @@ RadioButton {
 }
 
 .choice-box .menu-item:focused {
-    -fx-background-color: #7C4DFF;
+    -fx-background-color: #d50618;
 }
 
 .choice-box .menu-item>.label {
@@ -163,7 +163,7 @@ RadioButton {
 
 #apply {
     -fx-background-radius: 0;
-    -fx-background-color: #7C4DFF;
+    -fx-background-color: #d50618;
     -fx-background-size: cover;
     -fx-font-size: 13pt;
 }
@@ -177,7 +177,7 @@ RadioButton {
 
 #apply:hover,
 #apply:pressed {
-    -fx-background-color: #6B36FF;
+    -fx-background-color: #d50618;
 }
 
 #deny:hover,

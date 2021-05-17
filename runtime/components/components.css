@@ -42,7 +42,7 @@
 }
 
 #nameServer:hover {
-    -fx-fill: #7C4DFF;
+    -fx-fill: #d50618;
     -fx-font-size: 20px;
     -fx-font-weight: bold;
     -fx-wrap-text: false;
@@ -110,7 +110,7 @@
 
 #applyComponents {
     -fx-background-radius: 0;
-    -fx-fill: #7C4DFF;
+    -fx-fill: #d50618;
     -fx-background-color: transparent;
     -fx-font-size: 13pt;
 }
@@ -124,7 +124,7 @@
 
 #applyComponents:hover,
 #applyComponents:pressed {
-    -fx-background-color: #6B36FF;
+    -fx-background-color: #d50618;
     -fx-fill: #fff;
 }
 

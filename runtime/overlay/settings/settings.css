@@ -65,11 +65,11 @@
 }
 
 #ramSlider>.thumb {
-    -fx-background-color: #7C4DFF;
+    -fx-background-color: #d50618;
 }
 
 #ramSlider>.colored-track {
-    -fx-background-color: #7C4DFF;
+    -fx-background-color: #d50618;
     -fx-pref-height: 4px;
 }
 
